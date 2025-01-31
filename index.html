@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV2030News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Saudi Vision 2030 News</h1>
+    </header>    
+
+    <!DOCTYPE html>
+    <html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>قائمة جانبية</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* 🔹 زر القائمة (☰) */
+            .menu-icon {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                font-size: 30px;
+                cursor: pointer;
+                z-index: 1001;
+                background: white;
+                border-radius: 5px;
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+    
+            .menu-icon:hover {
+                background: #ddd;
+            }
+    
+            /* 🔹 القائمة الجانبية */
+            .sidebar {
+                position: fixed;
+                right: -250px;
+                top: 0;
+                width: 250px;
+                height: 100%;
+                background: #333;
+                color: white;
+                padding-top: 60px;
+                transition: 0.3s;
+            }
+    
+            .sidebar a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                border-bottom: 1px solid #444;
+                text-align: center;
+            }
+    
+            .sidebar a:hover {
+                background: #555;
+            }
+    
+            .close-btn {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- زر القائمة (☰) -->
+        <div class="menu-icon" onclick="openMenu()">☰</div>
+    
+        <!-- القائمة الجانبية -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="about.html">حول الموقع</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>        
+
+    
+        <script>
+            function openMenu() {
+                document.getElementById("sidebar").style.right = "0";
+            }
+    
+            function closeMenu() {
+                document.getElementById("sidebar").style.right = "-250px";
+            }
+        </script>
+    
+    </body>
+    </html>    
+
+    <main>
+        <section class="news">
+            <article>
+                <img src="https://i.ibb.co/svVcGv2R/med2030.jpg" alt="حفل فعاليات برنامج رؤية 2030">
+                <div class="news-content">
+                    <h2>الأمير سلمان بن سلطان رعى حفل إطلاق مشروع «درب الهجرة النبوية» مساء الاثنين (إمارة المدينة)"</h2>
+                    <p>أطلق الأمير سلمان بن سلطان، أمير منطقة المدينة المنورة، مساء الاثنين، مشروع «درب الهجرة النبوية»، وتجربة «على خُطاه» التي تُحاكي الدرب التاريخي الذي سلكه النبي محمد -صلى الله عليه وسلم- وذلك في حفل حضره الأمير سعود بن مشعل، نائب أمير منطقة مكة المكرمة،د.</p>
+                    <a href="news.html" class="read-more">اقرأ المزيد</a>
+                </div>
+            </article>            
+        
+        
+        
+            <article>
+                <img src="https://i.postimg.cc/tgnV4GsT/Bg-prince.jpg" alt="صورة الخبر الثاني">
+                <div class="news-content">
+                    <h2>مشروع الملك سلمان لتوسعة مسجد قباء و المناطق المحيطة به</h2>
+                    <p>توسعة وتطوير مسجد قباء لرفع الطاقة الاستيعابية لسد الفجوة بين الوضع الحالي وحجم الطلب المتزايد المرتكز على مستهدفات رؤية المملكة 2030،</p>
+                    <a href="news.html" class="read-more">اقرأ المزيد</a>
+                </div>
+            </article>
+        
+        <article>
+            <img src="https://i.postimg.cc/66cfhrtt/2.jpg" alt="صورة الخبر الثالث">
+            <div class="news-content">
+                    <h2>ملتقى “مدينة المعرفة”.. نقلة نوعية للسياحة في المدينة على مساحة 188 ألف متر مربع</h2>
+                    <p>يُعد ملتقى مدينة المعرفة (وسط المدينة سابقاً) أكبر مشروع سياحي في المدينة المنورة، والذي يعتبر وجهة فريدة من نوعها في المنطقة، كونه مشروعاً متعدد الاستخدامات ويتكون من عناصر يكاد يندر أن تكون متواجدة في مكان واحد.</p>
+                    <a href="news.html" class="read-more">اقرأ المزيد</a>
+            </div>
+        </article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة للطالب يزيد المخلفي &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

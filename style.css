@@ -1,0 +1,213 @@
+/* إعدادات أساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* رأس الموقع مع صورة خلفية */
+header {
+    background: url('https://www.almrsal.com/wp-content/uploads/2023/08/%D8%AA%D8%B1%D9%83%D8%B2-%D8%B1%D8%A4%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-2030-%D8%B9%D9%84%D9%89-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9.jpg') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* تظليل شفاف فوق الخلفية */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* طبقة شفافة */
+    z-index: 1;
+}
+
+/* تنسيق النص داخل الهيدر */
+header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* شريط التنقل */
+nav {
+    background: #0056b3;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* المحتوى الرئيسي */
+main {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* تصميم الأخبار - مع صورة على اليمين */
+.news article {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.news article:hover {
+    transform: translateY(-5px);
+}
+
+/* تصميم الصورة */
+.news article img {
+    width: 210px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+/* نص الخبر */
+.news article .news-content {
+    flex: 1;
+}
+
+.news article h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 1.5em;
+}
+
+.news article p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+}
+
+.news article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.news article a:hover {
+    color: #ffcc00;
+}
+
+/* الفوتر */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/*  تحسين الشريط الجانبي الي هو الشريط حق القائمة*/
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0px; /* خفض الشريط ليكون تحت الهيدر */
+    width: 200px;
+    height: calc(190vh - 100px); /* جعله يغطي بقية الشاشة */
+    background-color: #003366;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* تنسيق الروابط داخل الشريط */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    text-align: center;
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0055a5;
+    color: #fff;
+}
+
+/* تعميم التصميم بين جميع الصفحات */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* تنسيق الأخبار */
+.news-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-box h2 {
+    color: #003366;
+}
+
+.news-box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.news-box a:hover {
+    text-decoration: underline;
+}
